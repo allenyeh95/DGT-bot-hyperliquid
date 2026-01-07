@@ -22,10 +22,10 @@ COIN = "COIN"
 
 # ============ 參數 ============
 UPDATE_THRESHOLD, LIQUIDATION_PCT = 0.0035, 0.0085
-GRID_LEVELS, GRID_RANGE_PCT = 69, 0.018
+GRID_LEVELS, GRID_RANGE_PCT = 69, 0.02
 UPDATE_INTERVAL = 15
 MAX_POSITION_SIZE = 1.8
-REPORT_INTERVAL = 1800  # 30分鐘一次
+REPORT_INTERVAL = 1800  # 30min
 last_report_time = 0
 last_center_price = 0.0
 
@@ -142,7 +142,7 @@ def draw_screen(stdscr):
         stdscr.erase()
 
         time_str = datetime.datetime.now().strftime("%A-%B-%p")
-        title = f" ETH網格機器人 [{time_str}] "
+        title = f" ETH DGT bot [{time_str}] "
         stdscr.attron(curses.color_pair(5) | curses.A_BOLD)
         stdscr.addstr(0, 0, title.center(w))
         stdscr.attroff(curses.color_pair(5) | curses.A_BOLD)
@@ -304,7 +304,7 @@ if __name__ == "__main__":
         # 雲端模式：直接跑邏輯，不用 curses
         main_logic()
     else:
-        # 本機模式：使用 curses 漂亮介面
+        # 本機模式：使用 curses 介面
         def curses_main(stdscr):
             draw_thread = threading.Thread(target=draw_screen, args=(stdscr,), daemon=True)
             draw_thread.start()
