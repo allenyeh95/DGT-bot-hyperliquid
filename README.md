@@ -18,4 +18,5 @@ Layer 2: Adaptive Position Adjustment
 The bot features an intelligent feedback loop that scales based on your Position Size. As your exposure increases, the bot automatically adjusts grid density and order sizing. This dynamic re-calibration ensures that the bot de-risks during heavy drawdowns and optimizes capital efficiency when the position is lean.
 
 Welcome to use my pythonanywhere Referrals : https://www.pythonanywhere.com/?affiliate_id=01528366
+
 meantime , my hyperliquid referrals code : https://app.hyperliquid.xyz/join/V77TV
