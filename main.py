@@ -230,14 +230,14 @@ def run_grid_bot(exchange, info, coin):
 
     # 根據持倉調整格子數量
     if current_pos > 1.0:
-        buy_qty = 0.1
-        sell_qty = 0.3
+        buy_qty = 0.01
+        sell_qty = 0.03
     elif current_pos < -1.0:
-        buy_qty = 0.3
-        sell_qty = 0.1
+        buy_qty = 0.03
+        sell_qty = 0.01
     else:
-        buy_qty = 0.2
-        sell_qty = 0.2
+        buy_qty = 0.02
+        sell_qty = 0.02
 
     lower = mid_price * (1 - GRID_RANGE_PCT)
     upper = mid_price * (1 + GRID_RANGE_PCT)
