@@ -1,7 +1,7 @@
 Dynamic Grid Trading(DGT) Bot (Hyperliquid)
 A robust dynamic grid trading bot specifically engineered for the Hyperliquid exchange. This bot is designed for high availability and sophisticated risk management.
 
-🚀 Deployment & Execution
+Deployment & Execution
 The bot is optimized for seamless operation across different environments:
 
 PythonAnywhere: Ideal for stable, 24/7 cloud hosting with minimal setup.
