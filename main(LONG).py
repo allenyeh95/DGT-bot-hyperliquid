@@ -126,7 +126,7 @@ def add_log(msg):
         log_lines.pop(0)
     print(log_msg)  # 雲端模式下必須用 print 才能在 Always-on log 看到
 
-# ============ 繪製畫面（僅本地使用） ============
+# ============ 繪製畫面（僅powershell使用） ============
 def draw_screen(stdscr):
     global running
     curses.curs_set(0)
